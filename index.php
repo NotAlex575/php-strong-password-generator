@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,6 +26,15 @@
             <button class="btn btn-primary w-100" type="submit">Invia</button>
           </form>
         </div>
+        <?php
+        $passwordLength = $_GET["passwordLength"]?? "";
+        var_dump($passwordLength);
+        if($passwordLength != null){
+            echo "<div class='col-md-12 mt-5'>
+                Ciao, ecco qui la tua password! ". $passwordLength ."!
+            </div>";
+        }
+        ?>
       </div>
     </div>
   </main>
