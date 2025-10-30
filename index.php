@@ -1,4 +1,6 @@
-
+<?php 
+    session_start();
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,7 +20,7 @@
     <div class="container text-center">
       <div class="row justify-content-center">
         <div class="col-md-4">
-          <form action="index.php" method="get" class="p-4 border rounded bg-white shadow-sm">
+          <form action="index.php" method="post" class="p-4 border rounded bg-white shadow-sm">
             <div class="mb-3">
               <label class="form-label" for="passwordLength">Lunghezza password</label>
               <input class="form-control" type="number" min="4" max="36" name="passwordLength" id="passwordLength">
@@ -27,7 +29,7 @@
           </form>
         </div>
         <?php 
-            include_once "function.php" 
+            include_once "function.php";
         ?>
       </div>
     </div>
