@@ -1,5 +1,7 @@
 <?php 
     session_start();
+    $_SESSION["passwordLength"] = null;
+    include_once "./function.php";
 ?>
 
 <!DOCTYPE html>
@@ -12,9 +14,9 @@
 </head>
 
 <body class="bg-light">
-  <header class="text-center mt-4">
-    <h1>PASSWORD GENERATOR SIMULATOR!</h1>
-  </header>
+    <header class="text-center mt-4">
+        <h1>PASSWORD GENERATOR SIMULATOR!</h1>
+    </header>
 
   <main class="d-flex justify-content-center align-items-center vh-100">
     <div class="container text-center">
@@ -28,9 +30,6 @@
             <button class="btn btn-primary w-100" type="submit">Invia</button>
           </form>
         </div>
-        <?php 
-            include_once "function.php";
-        ?>
       </div>
     </div>
   </main>
