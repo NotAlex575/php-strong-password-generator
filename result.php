@@ -22,7 +22,7 @@
                     <p class="card-text fs-4 fw-bold text-success">
                         <?php 
                             echo "<div class='col-md-12 mt-5'>
-                            Ciao, ecco qui la tua password! <p class='text-success'>". $_SESSION["password"]."</p>!
+                            Ciao, ecco qui la tua password! <p class='text-success'>". $_SESSION["password"]."</p>
                             </div>";
                         ?>
                     </p>
