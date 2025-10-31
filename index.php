@@ -18,6 +18,12 @@
     transform: scale(1.2);
     margin-left: 10px; 
   }
+  .form-check-input {
+    margin-right: 2rem !important;
+  }
+  .caratteri {
+    margin-right: 1.5rem !important;
+  }
 </style>
 
 <body class="bg-light">
@@ -43,7 +49,25 @@
               <input class="checkbox-size" type="checkbox" class="ms-2" name="duplicati">
             </div>
 
-            <button class="btn btn-primary w-100" type="submit">Invia</button>
+            <!-- INCLUDI LETTERE -->
+            <div class="form-check d-flex justify-content-end">
+              <input class="checkbox-size form-check-input caratteri" type="checkbox" id="lettere">
+              <label class="form-check-label" for="lettere">Caratteri</label>
+            </div>
+
+            <!-- INCLUDI NUMERI -->
+            <div class="form-check d-flex justify-content-end">
+              <input class="checkbox-size form-check-input" type="checkbox" id="numeri">
+              <label class="form-check-label" for="numeri">Numeri</label>
+            </div>
+
+            <!-- INCLUDI SIMBOLI -->
+            <div class="form-check d-flex justify-content-end">
+              <input class="checkbox-size form-check-input" type="checkbox" id="simboli">
+              <label class="form-check-label" for="simboli">Simboli</label>
+            </div>
+
+            <button class="btn btn-primary w-100 mt-4" type="submit">Invia</button>
           </form>
         </div>
       </div>
