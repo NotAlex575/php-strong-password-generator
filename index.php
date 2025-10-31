@@ -1,6 +1,10 @@
 <?php 
     session_start();
     $_SESSION["passwordLength"] = null;
+    $_SESSION["duplicati"] = null;
+    $_SESSION["lettere"] = null;
+    $_SESSION["numeri"] = null;
+    $_SESSION["simboli"] = null;
     include_once "./function.php";
 ?>
 
@@ -17,6 +21,7 @@
   .checkbox-size{
     transform: scale(1.2);
     margin-left: 10px; 
+    border: 1px solid black;
   }
   .form-check-input {
     margin-right: 2rem !important;
@@ -51,19 +56,19 @@
 
             <!-- INCLUDI LETTERE -->
             <div class="form-check d-flex justify-content-end">
-              <input class="checkbox-size form-check-input caratteri" type="checkbox" id="lettere">
+              <input class="checkbox-size form-check-input caratteri" name="lettere" type="checkbox" id="lettere">
               <label class="form-check-label" for="lettere">Caratteri</label>
             </div>
 
             <!-- INCLUDI NUMERI -->
             <div class="form-check d-flex justify-content-end">
-              <input class="checkbox-size form-check-input" type="checkbox" id="numeri">
+              <input class="checkbox-size form-check-input" name="numeri" type="checkbox" id="numeri">
               <label class="form-check-label" for="numeri">Numeri</label>
             </div>
 
             <!-- INCLUDI SIMBOLI -->
             <div class="form-check d-flex justify-content-end">
-              <input class="checkbox-size form-check-input" type="checkbox" id="simboli">
+              <input class="checkbox-size form-check-input" name="simboli" type="checkbox" id="simboli">
               <label class="form-check-label" for="simboli">Simboli</label>
             </div>
 
