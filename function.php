@@ -41,7 +41,6 @@
             }
             $_SESSION["password"] = $password;
             header("Location: ./result.php");
-            exit;
         }
     }
     elseif($_SESSION["passwordLength"] == null && !empty($_POST)){
